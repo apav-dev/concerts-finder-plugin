@@ -1,0 +1,7 @@
+{
+  "$id": "fetchConcertsPlugin",
+  "$schema": "https://schema.yext.com/config/platform/plugin/v1",
+  "globals": {
+    "SPOTIFY_REFESH_TOKEN": "AQALYAjqmoRnwQG1SZAagUFWfS6Bjp3rOzJltDOkHlBEjFocTN_CW-0weE-YxDhW0e6iImbx5fIVW0RjYCeIPfTJb_hi1NBMJJJ9YHPOKxjXBW6VQdrwmSFtEL17PrYTxGI"
+  }
+}
