@@ -11,6 +11,7 @@ import {
 
 declare const SEAT_GEEK_CLIENT_ID: string;
 declare const SEAT_GEEK_CLIENT_SECRET: string;
+declare const YEXT_KNOWLEDGE_API_KEY: string;
 
 // ############################################ SeatGeek APIs ############################################
 export const searchPerformersFromSeatGeek = async (
@@ -89,7 +90,7 @@ const checkIfKgEntityExists = async (
       `https://api-sandbox.yext.com/v2/accounts/3148902/entities/${entityId}`,
       {
         params: {
-          api_key: "e00402a95669090a8ccb240cc785e7b8",
+          api_key: YEXT_KNOWLEDGE_API_KEY,
           v: "20220322",
         },
       }
@@ -118,7 +119,7 @@ export const createKgEntity = async (
       data,
       {
         params: {
-          api_key: "deb41344dd6799c43ecd13c5f88a502f",
+          api_key: YEXT_KNOWLEDGE_API_KEY,
           v: "20220322",
           entityType,
         },
@@ -144,7 +145,7 @@ export const editKgEntity = async (
       data,
       {
         params: {
-          api_key: "deb41344dd6799c43ecd13c5f88a502f",
+          api_key: YEXT_KNOWLEDGE_API_KEY,
           v: "20220322",
         },
       }
@@ -160,7 +161,6 @@ export const editKgEntity = async (
 };
 
 // ###################################### Google APIs #################################
-// https://maps.googleapis.com/maps/api/place/textsearch/json?query=barclays center&key=AIzaSyAqtI0LYwB9Wo0GXiZU4cH8cVpFFi3u8Ko
 
 export const searchForPlace = async (
   query: string
@@ -170,7 +170,7 @@ export const searchForPlace = async (
       "https://maps.googleapis.com/maps/api/place/textsearch/json",
       {
         params: {
-          key: "AIzaSyAqtI0LYwB9Wo0GXiZU4cH8cVpFFi3u8Ko",
+          key: GOOGLE_API_KEY,
           query,
         },
       }

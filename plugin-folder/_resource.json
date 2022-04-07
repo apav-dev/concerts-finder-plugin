@@ -2,9 +2,11 @@
   "$id": "fetchConcertsPlugin",
   "$schema": "https://schema.yext.com/config/platform/plugin/v1",
   "globals": {
-    "SPOTIFY_REFESH_TOKEN": "${{SPOTIFY_REFRESH_TOKEN}}",
+    "SPOTIFY_REFRESH_TOKEN": "${{SPOTIFY_REFRESH_TOKEN}}",
     "SPOTIFY_AUTH": "${{SPOTIFY_AUTH}}",
     "SEAT_GEEK_CLIENT_ID": "${{SEAT_GEEK_CLIENT_ID}}",
-    "SEAT_GEEK_CLIENT_SECRET": "${{SEAT_GEEK_CLIENT_SECRET}}"
+    "SEAT_GEEK_CLIENT_SECRET": "${{SEAT_GEEK_CLIENT_SECRET}}",
+    "YEXT_KNOWLEDGE_API_KEY": "${{YEXT_KNOWLEDGE_API_KEY}}",
+    "GOOGLE_API_KEY": "${{GOOGLE_API_KEY}}"
   }
 }
